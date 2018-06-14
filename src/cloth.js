@@ -395,7 +395,7 @@ function render(current) {
     }
     // 随机风力和风向
     var up = (Math.random() > 0.5) ? 1 : -1;
-    wind.windForce = Math.min(Math.abs(wind.windForce +(Math.random() / 10000) * up), 0.001);
+    wind.windForce = Math.min(Math.abs(wind.windForce +(Math.random() / 5000) * up), 0.005);
     wind.last = current;
 }
 
